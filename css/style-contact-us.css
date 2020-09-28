@@ -165,10 +165,6 @@ input{
   font-size: 28px;
 }
 
-textarea{
-  margin-top: 50px;
-}
-
 form .submit {
   border-color: transparent;
   background: black;
