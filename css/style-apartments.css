@@ -110,11 +110,11 @@ body {
   padding: 0;
 }
 
-.portfolio-menu{
+.filter-button{
   text-align: center;
 }
 
-.portfolio-menu ul li{
+.filter-button ul li{
   display: inline-block;
   margin: 0 4px;
   list-style: none;
@@ -128,16 +128,16 @@ body {
   margin-bottom: 20px;
 }
 
-.portfolio-menu ul li:hover{
+.filter-button ul li:hover{
   background: black;
   color: #ffffff;
 }
 
-.portfolio-item {
+.filter-item {
 	width: 100%;
 }
 
-.portfolio-item .item {
+.filter-item .item {
   display: inline-block;
 	width: 520px;
 	height: 400px;
@@ -146,7 +146,7 @@ body {
   color: #ffffff;
  }
 
- .portfolio-item .overlay{
+ .filter-item .overlay{
   position: absolute;
   top: 0;
   left: 0;
@@ -172,7 +172,7 @@ body {
   transition: transform 0.25s;
 }
 
-.portfolio-item .overlay:hover{
+.filter-item .overlay:hover{
   opacity: 1;
 }
 
@@ -195,7 +195,7 @@ body {
   margin-top: 15px;
 }
 
-.portfolio-item img{
+.filter-item img{
 	width: 100%;
 	height: auto;
 }
