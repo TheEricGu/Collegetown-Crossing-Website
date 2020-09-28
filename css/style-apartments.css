@@ -118,7 +118,7 @@ body {
   display: inline-block;
   margin: 0 4px;
   list-style: none;
-  padding: 8px 16px;
+  padding: 8px 8px;
   border: 1px solid black;
   cursor: pointer;
   transition: all .4s ease;
@@ -189,10 +189,14 @@ body {
   font-size: 55px;
   font-weight: 400;
   letter-spacing: 3px;
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .description {
-  margin-top: 15px;
+  text-align: center;
+  line-height: 40px;
 }
 
 .filter-item img{

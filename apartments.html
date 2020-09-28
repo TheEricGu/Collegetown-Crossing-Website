@@ -44,78 +44,261 @@
 					<li data-filter=".2">2 Bedroom</li>
 					<li data-filter=".3">3 Bedroom</li>
 					<li data-filter=".4">4 Bedroom</li>
+					<li data-filter=".2f">2nd Floor</li>
+					<li data-filter=".3f">3rd Floor</li>
+					<li data-filter=".4f">4th Floor</li>
+					<li data-filter=".5f">5th Floor</li>
+					<li data-filter=".6f">6th Floor</li>
 				</ul>
 			</div>
 
-			<div class="filter-item">
-				<div class="item 4">
+			<div id="app" class="filter-item">
+				<div class="item 4 2f 3f 4f 5f 6f">
 					<div class="overlay overlay--blur">
 						<a href="4-bedroom-apartments.html">
 							<div class="title">Type A</div>
 						</a>
-						<div class="description">
-							4 Bed | 2 Bath | Available
+						<div v-for="item in index0" class="description">
+							<p>4 Bed | 2 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
 						</div>
 					</div>
 					<img src="media/apartments/type-a.jpg" alt="">
 				</div>
 
-				<div class="item 2">
+				<div id="app" class="item 2 2f">
 					<div class="overlay overlay--blur">
 						<a href="4-bedroom-apartments.html">
 							<div class="title">Type B</div>
 						</a>
-						<div class="description">
-							2 Bed | 1 Bath | Not Available
+						<div v-for="item in index1" class="description">
+							<p>2 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
 						</div>
 					</div>
 					<img src="media/apartments/type-b.jpg" alt="">
 				</div>
 
-				<div class="item 4">
+				<div id="app" class="item 4 3f 4f 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type C</div>
+						</a>
+						<div v-for="item in index2" class="description">
+							<p>4 Bed | 2 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-c.jpg" alt="">
 				</div>
 
-				<div class="item 2">
+				<div id="app" class="item 2 2f 3f 4f 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type D</div>
+						</a>
+						<div v-for="item in index3" class="description">
+							<p>2 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-d.jpg" alt="">
 				</div>
 
-				<div class="item 2">
+				<div id="app" class="item 2 2f 3f 4f 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type E</div>
+						</a>
+						<div v-for="item in index4" class="description">
+							<p>2 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-e.jpg" alt="">
 				</div>
 
-				<div class="item s">
+				<div id="app" class="item s 2f 3f 4f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type F</div>
+						</a>
+						<div v-for="item in index5" class="description">
+							<p>1 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-f.jpg" alt="">
 				</div>
 
-				<div class="item s">
+				<div id="app" class="item s 2f 3f 4f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type G</div>
+						</a>
+						<div v-for="item in index6" class="description">
+							<p>1 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-g.jpg" alt="">
 				</div>
 
-				<div class="item s">
+				<div id="app" class="item s 2f 3f 4f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type H</div>
+						</a>
+						<div v-for="item in index7" class="description">
+							<p>1 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-h.jpg" alt="">
 				</div>
 
-				<div class="item s">
+				<div id="app" class="item s 2f 3f 4f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type I</div>
+						</a>
+						<div v-for="item in index8" class="description">
+							<p>1 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-i.jpg" alt="">
 				</div>
 
-				<div class="item s">
+				<div id="app" class="item s 2f 3f 4f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type J</div>
+						</a>
+						<div v-for="item in index9" class="description">
+							<p>1 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-j.jpg" alt="">
 				</div>
 
-				<div class="item 3">
+				<div id="app" class="item 3 2f 3f 4f 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type K</div>
+						</a>
+						<div v-for="item in index10" class="description">
+							<p>3 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-k.jpg" alt="">
 				</div>
 
-				<div class="item 2">
+				<div id="app" class="item 2 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type L</div>
+						</a>
+						<div v-for="item in index11" class="description">
+							<p>2 Bed | 1 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-l.jpg" alt="">
 				</div>
 
-				<div class="item 3">
+				<div id="app" class="item 3 5f 6f">
+					<div class="overlay overlay--blur">
+						<a href="4-bedroom-apartments.html">
+							<div class="title">Type M</div>
+						</a>
+						<div v-for="item in index12" class="description">
+							<p>3 Bed | 2 Bath</p>
+							<p>Available: {{ item['fields']['availability'] }}</p>
+						</div>
+					</div>
 					<img src="media/apartments/type-m.jpg" alt="">
 				</div>
 
+				<!-- Include Dependancy Scripts -->
+				<script type="text/javascript" src="https://unpkg.com/vue"></script>
+				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+				<script type="text/javascript">
+					var app = new Vue({
+						el: '#app',
+						data: {
+							// accumulator for items
+							items: [],
+							index0: [],
+							index1: [],
+							index2: [],
+							index3: [],
+							index4: [],
+							index5: [],
+							index6: [],
+							index7: [],
+							index8: [],
+							index9: [],
+							index10: [],
+							index11: [],
+							index12: []
+						},
+						mounted: function () {
+							this.loadItems();
+						},
+						methods: {
+							loadItems: function () {
+
+								// Init variables
+								var self = this
+								var app_id = "app1aWRN0EWpI8tWF";
+								var app_key = "keyk7NN2u4signpZI";
+								this.items = []
+								this.index0 = []
+								this.index1 = []
+								this.index2 = []
+								this.index3 = []
+								this.index4 = []
+								this.index5 = []
+								this.index6 = []
+								this.index7 = []
+								this.index8 = []
+								this.index9 = []
+								this.index10 = []
+								this.index1 = []
+								this.index12 = []
+								axios.get(
+									"https://api.airtable.com/v0/" + app_id + "/Imported%20table?view=Grid%20view", {
+									headers: {
+										Authorization: "Bearer " + app_key
+									}
+								}
+								).then(function (response) {
+									// stores response data in items in a LIST of RECORDS which can now be accessed in html
+									self.items = response.data.records
+									self.index0 = [response.data.records[0]]
+									self.index1 = [response.data.records[1]]
+									self.index2 = [response.data.records[2]]
+									self.index3 = [response.data.records[3]]
+									self.index4 = [response.data.records[4]]
+									self.index5 = [response.data.records[5]]
+									self.index6 = [response.data.records[6]]
+									self.index7 = [response.data.records[7]]
+									self.index8 = [response.data.records[8]]
+									self.index9 = [response.data.records[9]]
+									self.index10 = [response.data.records[10]]
+									self.index11 = [response.data.records[11]]
+									self.index12 = [response.data.records[12]]
+
+								}).catch(function (error) {
+									console.log(error)
+								})
+							}
+						}
+					})
+				</script>
 			</div>
 		</div>
 
