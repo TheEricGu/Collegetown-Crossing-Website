@@ -164,7 +164,7 @@ body {
 }
 
 .overlay--blur{
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
 }
 
 .overlay > * {
@@ -178,6 +178,11 @@ body {
 
 .overlay:hover > * {
   transform:translateY(0)
+}
+
+.overlay a{
+  text-decoration: none;
+  color: white;
 }
 
 .title {
