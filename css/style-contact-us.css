@@ -93,14 +93,14 @@ body {
 .page-title h1 {
   font-size: 60px;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .content-area {
   position: absolute;
   top: 500px;
   width: 100%;
-  background-color: goldenrod;
+  background-color: white;
   padding-top: 60px;
 }
 
@@ -116,8 +116,6 @@ body {
   width: 597px;
   height: 100%;
 }
-
-
 
 .left img {
   width: 100%;
@@ -142,9 +140,11 @@ body {
 }
 
 .right {
+  padding-top: 45px;
   display: inline-block;
   width: 597px;
   padding-left: 70px;
+  vertical-align: top;
 }
 
 .form-control{
@@ -153,23 +153,26 @@ body {
   border: none;
   outline: none;
   border-bottom: 1px solid gray;
-  margin-bottom: 18px;
-  font-size: 18px;
+  margin-bottom: 40px;
   font-weight: 300px;
+  height: 30px;
+  font-size: 16px;
+}
+
+input{
   color: black;
+  font-weight: 300px;
+  font-size: 28px;
 }
 
-input {
-  height: 45px;
-}
-
-textarea {
-  height: 90px;
+textarea{
+  margin-top: 50px;
 }
 
 form .submit {
   border-color: transparent;
   background: black;
+  border: 1px solid black;
   color: white;
   font-size: 18px;
   font-weight: 300;
