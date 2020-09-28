@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Apartments</title>
+	<link rel="stylesheet" href="css/style-apartments.css">
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="media/tab-logo.png">
+</head>
+
+<body>
+	<div class="navbar">
+		<nav class="nav-area">
+			<img class="logo" src="media/nav-logo.png" height="40">
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="apartments.html">APARTMENTS</a>
+					<ul>
+						<li><a href="studio-apartments.html">STUDIO APARTMENTS</a></li>
+						<li><a href="2-bedroom-apartments.html">2 BEDROOM APARTMENTS</a></li>
+						<li><a href="3-bedroom-apartments.html">3 BEDROOM APARTMENTS</a></li>
+						<li><a href="4-bedroom-apartments.html">4 BEDROOM APARTMENTS</a></li>
+					</ul>
+				</li>
+				<li><a href="resident-experience.html">RESIDENT EXPERIENCE</a></li>
+				<li><a href="contact-us.html">CONTACT US</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="page-title">
+		<h1>Apartments</h1>
+	</div>
+
+	<div class="content-area">
+		<div class="container">
+			<div class="portfolio-menu">
+				<ul>
+					<li class="active" data-filter="*">All</li>
+					<li data-filter=".web">Webdesign</li>
+					<li data-filter=".seo">Seo</li>
+					<li data-filter=".graphics">Graphics</li>
+				</ul>
+			</div>
+			<div class="portfolio-item">
+				<div class="item web">
+					<img src="media/apartments/coffee.jpg" height="300" alt="">
+				</div>
+				<div class="item seo">
+					<img src="media/apartments/coffee1.jpg" height="300" alt="">
+				</div>
+				<div class="item graphics">
+					<img src="media/apartments/coffee2.jpg" height="300" alt="">
+				</div>
+				<div class="item web">
+					<img src="media/apartments/coffee3.jpg" height="300" alt="">
+				</div>
+				<div class="item seo">
+					<img src="media/apartments/coffee4.jpg" height="300" alt="">
+				</div>
+				<div class="item graphics">
+					<img src="media/apartments/coffee5.jpg" height="300" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script>
+		$('.portfolio-item').isotope({
+			itemSelector: '.item',
+			layoutMode: 'fitRows'
+		});
+		$('.portfolio-menu ul li').click(function () {
+			$('.portfolio-menu ul li').removeClass('active');
+			$(this).addClass('active');
+
+			var selector = $(this).attr('data-filter');
+			$('.portfolio-item').isotope({
+				filter: selector
+			});
+			return false;
+		});
+	</script>
+
+	<div class="bottom-ribbon">
+		<div class="bottom-ribbon-content">
+			<ul class="bottom_links">
+				<li>Study. Dine. Relax. Play.</li>
+				<li>info@urbanithaca.com</li>
+				<li>(607) 330-2442</li>
+				<li>307 College Ave, Ithaca, New York, 14850</li>
+			</ul>
+		</div>
+	</div>
+
+</body>
+
+</html>

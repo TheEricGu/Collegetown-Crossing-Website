@@ -1,0 +1,169 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Josefin Sans;
+}
+
+body {
+  background: url(../media/apartments/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0px;
+  background-color: rgba(255,255,255,.8);
+}
+
+.nav-area {
+  width: 1100px;
+  height: 100%;
+  margin: auto; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+.nav-area ul {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-area > ul > li {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-area ul li a {
+  text-decoration: none;
+  color: #000000;
+  padding: 40px 20px ;
+  height: 100px;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.nav-area ul li:hover a {
+  background-color: rgba(255,255,255,1);
+}
+
+.nav-area li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-area li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000000;
+  transition: width .3s;
+}
+
+.nav-area li a:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+.nav-area ul ul {
+  position: absolute;
+  padding: 0;
+  display: none;
+  top: 100%;
+  left: 0;
+}
+
+.nav-area ul li:hover > ul {
+  display: block;
+}
+
+.page-title {
+  position: absolute;
+  top: 250px;
+  width: 100%;  
+  text-align: center;
+}
+
+.page-title h1 {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.content-area {
+  position: absolute;
+  top: 500px;
+  width: 100%;
+  height: 1000px;
+  background-color: white;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  background-color: rebeccapurple;
+  margin: auto;
+}
+
+.portfolio-menu{
+  text-align: center;
+}
+
+.portfolio-menu ul li{
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  padding: 10px 15px;
+  border: 1px solid tomato;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.portfolio-menu ul li:hover{
+  background: tomato;
+  color: #ffffff;
+}
+
+.portfolio-item{
+  width: 100%;
+}
+
+.portfolio-item .item{
+  width: 303px;
+  float: left;
+  margin-bottom: 10px;
+}
+
+li.active{
+  background: tomato;
+  color: #ffffff;
+}
+
+.bottom-ribbon {
+  overflow: hidden;
+  background-color: rgba(255,255,255,.8);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-ribbon li {
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 26px;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 0px auto;
+}
