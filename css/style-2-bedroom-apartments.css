@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(../media/studio-apartments/background.jpg) no-repeat center center fixed;
+  background: url(../media/2-bedroom-apartments/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -235,7 +235,7 @@ body {
 }
 
 .type {
-  padding-top: 70px;
+  padding-top: 40px;
   border-top: 1px solid gray;
 }
 
@@ -253,18 +253,27 @@ body {
 }
 
 .media {
-  margin-bottom: 70px;
+  border-top: 1px solid gray;
+  padding-top: 40px;
 }
 
-.type .media .gallery img {
-  height: 214px;
-  width: 214px;
+.media .gallery img {
+  height: 170px;
+  width: 170px;
+}
+
+.media h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 
 .bottom-ribbon {
   position: relative;
-  margin-top: 150px;	
+  margin-top: 180px;	
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
