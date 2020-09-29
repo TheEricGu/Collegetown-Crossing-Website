@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: url(../media/studio-apartments/background.jpg) no-repeat center center fixed;
+  background: url(../media/3-bedroom-apartments/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -129,7 +129,6 @@ body {
 .container {
   width: 1200px;
   margin: auto;
-  padding: 0;
   text-align: center;
   background-color: white;
 }
@@ -197,7 +196,7 @@ body {
 }
 
 .map {
-  margin-bottom: 40px;
+margin-bottom: 30px;
 }
 
 .map img {
@@ -205,66 +204,75 @@ body {
   height: auto;
 }
 
-.content-column .description {
+.description {
   font-weight: 300;
   font-size: 23px;
   color: black;
   line-height: 37px;
   text-align: justify;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .amenities h1 {
+  border-top: 1px solid gray;
   text-align: left;
   font-weight: 400;
   font-size: 35px;
-  border-bottom: 1px solid gray;
-  padding-bottom: 10px;
+  padding-top: 30px;
+  margin-bottom: 15px;
 }
 
 .amenities ul{
   margin-bottom: 30px;
 }
-
 .amenities ul li {
   list-style: none;
   font-weight: 300;
   font-size: 23px;
   text-align: left;
-  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 .type {
-  padding-top: 70px;
   border-top: 1px solid gray;
+  padding-top: 30px;
+  margin-bottom: 15px;
 }
 
 .type h1 {
   text-align: left;
   font-weight: 400;
   font-size: 35px;
+  margin-bottom: 15px;
 }
 
 .type h2 {
   text-align: left;
   font-weight: 300;
   font-size: 20px;
-  margin: 20px 0;
+  margin-bottom: 30px;
 }
 
 .media {
-  margin-bottom: 70px;
+  border-top: 1px solid gray;
+  padding-top: 30px;
 }
 
-.type .media .gallery img {
+.media .gallery img {
   height: 214px;
   width: 214px;
 }
 
+.media h1 {
+  text-align: left;
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
 
 .bottom-ribbon {
   position: relative;
-  margin-top: 150px;	
+  margin-top: 180px;	
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
