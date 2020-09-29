@@ -9,12 +9,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="media/tab-logo.png">
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 	<div class="navbar">
 		<nav class="nav-area">
-			<img class="logo" src="media/nav-logo.png" height="40">
+			<a href="index.html">
+				<img class="logo" src="media/nav-logo.png" height="40"></a>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="apartments.html">APARTMENTS</a>
@@ -39,14 +41,20 @@
 		<div class="container">
 			<div class="left">
 				<img src="media/contact-us/profile.jpg">
-				<h1>Collegetown Crossing</h1>
-				<h2>Urban Ithaca Real Estate</h2>
-				<h2>307 College Ave, Ithaca, NY, 14850</h2>
-				<h2>(607) 330-2442 | info@urbanithaca.com</h2>
+				<script src="js/aos.js"></script>
+				<script type="text/javascript">
+					AOS.init();
+				</script>
+				<div data-aos="fade-right">
+					<h1>Collegetown Crossing</h1>
+					<h2>Urban Ithaca Real Estate</h2>
+					<h2>307 College Ave, Ithaca, NY, 14850</h2>
+					<h2>(607) 330-2442 | info@urbanithaca.com</h2>
+				</div>
 			</div>
 
 			<div class="right">
-				<form id="contact-form" method="post" action="contact-form-handler.php">
+				<form id="contact-form" method="post" action="php/contact-form-handler.php">
 					<input name="name" type="text" class="form-control" placeholder="FULL NAME" required>
 					<input name="email" type="email" class="form-control" placeholder="EMAIL ADDRESS" required>
 					<textarea name="message" class="form-control" placeholder="MESSAGE" row="4" required></textarea>

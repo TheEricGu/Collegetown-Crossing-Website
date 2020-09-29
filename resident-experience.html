@@ -9,12 +9,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="media/tab-logo.png">
+	<link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 	<div class="navbar">
 		<nav class="nav-area">
-			<img class="logo" src="media/nav-logo.png" height="40">
+			<a href="index.html">
+				<img class="logo" src="media/nav-logo.png" height="40"></a>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="apartments.html">APARTMENTS</a>
@@ -38,39 +40,49 @@
 	<div class="content-area">
 		<div class="container">
 
+			<script src="js/aos.js"></script>
+			<script type="text/javascript">
+				AOS.init();
+			</script>
+
 			<div class="left-column">
 				<div class="header">Features</div>
-				<ul class="list">
-					<li>High quality concrete, masonry, and steel construction</li>
-					<li>Top-notch sound reduction and safety</li>
-					<li>On-site building management</li>
-					<li>Fresh air circulation system</li>
-					<li>Large windows offering beautiful views of Ithaca</li>
-					<li>Extensive security camera coverage of the building</li>
-					<li>One block away from Cornell campus</li>
-					<li>TCAT public transportation stop in front of building</li>
-					<li>Constructed in 2016</li>
-				</ul>
+				<div data-aos="fade-right">
+					<ul class="list">
+						<li>High quality concrete, masonry, and steel construction</li>
+						<li>Top-notch sound reduction and safety</li>
+						<li>On-site building management</li>
+						<li>Fresh air circulation system</li>
+						<li>Large windows offering beautiful views of Ithaca</li>
+						<li>Extensive security camera coverage of the building</li>
+						<li>One block away from Cornell campus</li>
+						<li>TCAT public transportation stop in front of building</li>
+						<li>Constructed in 2016</li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="right-column">
 				<div class="header">Amenities</div>
-				<ul class="list">
-					<li>Fully furnished rooms</li>
-					<li>Heat and hot water included</li>
-					<li>Heating and AC control unit in every room</li>
-					<li>High speed fiber optic internet access</li>
-					<li>Large bedrooms, closets</li>
-					<li>24 hour fitness center</li>
-					<li>On-site laundry</li>
-					<li>Trash room on every floor</li>
-					<li>Ample parking availability</li>
-				</ul>
+
+				<div data-aos="fade-left">
+					<ul class="list">
+						<li>Fully furnished rooms</li>
+						<li>Heat and hot water included</li>
+						<li>Heating and AC control unit in every room</li>
+						<li>High speed fiber optic internet access</li>
+						<li>Large bedrooms, closets</li>
+						<li>24 hour fitness center</li>
+						<li>On-site laundry</li>
+						<li>Trash room on every floor</li>
+						<li>Ample parking availability</li>
+					</ul>
+				</div>
 			</div>
 
 			<div class="slidershow middle">
 
-				<div class="slides">
+				<div class="slides" data-aos="fade-up">
 					<input type="radio" name="r" id="r1" checked>
 					<input type="radio" name="r" id="r2">
 					<input type="radio" name="r" id="r3">
