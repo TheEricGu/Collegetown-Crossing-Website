@@ -1,43 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Apartments</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Studio Apartments</title>
 	<link rel="stylesheet" href="css/style-studio-apartments.css">
 	<link rel="stylesheet" href="css/lightbox.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="media/tab-logo.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function () {
-			// Add smooth scrolling to all links
-			$("a").on('click', function (event) {
-
-				// Make sure this.hash has a value before overriding default behavior
-				if (this.hash !== "") {
-					// Prevent default anchor click behavior
-					event.preventDefault();
-
-					// Store hash
-					var hash = this.hash;
-
-					// Using jQuery's animate() method to add smooth page scroll
-					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-					$('html, body').animate({
-						scrollTop: $(hash).offset().top - 200
-					}, 800, function () {
-
-						// Add hash (#) to URL when done scrolling (default click behavior)
-						window.location.hash = hash;
-					});
-				} // End if
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="js/up-botton-fade-in.js"></script>
 </head>
 
 <body>
+
 	<div class="navbar">
 		<nav class="nav-area">
 			<img class="logo" src="media/nav-logo.png" height="40">
@@ -73,6 +53,8 @@
 				<a href="#j">Type J</a>
 			</div>
 
+
+
 			<div class="content-column">
 				<div class="map">
 					<img src="media/studio-apartments/map.jpg" alt="">
@@ -102,6 +84,7 @@
 						<li>Ample parking availability</li>
 					</ul>
 				</div>
+
 
 				<section id="f">
 					<div class="type">
@@ -203,9 +186,13 @@
 				</section>
 
 
+
 			</div>
 			<script src="js/lightbox-plus-jquery.min.js"></script>
 		</div>
+
+
+
 		<div class="bottom-ribbon">
 			<ul class="bottom_links">
 				<li>Study. Dine. Relax. Play.</li>
@@ -215,6 +202,13 @@
 			</ul>
 		</div>
 	</div>
+	<a href="#">
+		<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+	</a>
+
+
+
+
 </body>
 
 </html>
