@@ -8,6 +8,33 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="icon" href="media/tab-logo.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			// Add smooth scrolling to all links
+			$("a").on('click', function (event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top - 200
+					}, 800, function () {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -76,109 +103,118 @@
 					</ul>
 				</div>
 
-				<div class="type">
-					<h1>Type F</h1>
-					<h2>1 BED | 1 BATH | 2-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					<div class="media">
-						<div class="gallery">
-							<a href="media/studio-apartments/studio-f-room1.jpg" data-lightbox="mygallery"
-								data-title="Type F - Room 1"><img src="media/studio-apartments/studio_f_room1.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-f-room2.jpg" data-lightbox="mygallery"
-								data-title="Type F - Room 2"><img src="media/studio-apartments/studio_f_room2.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-f-kitchen.jpg" data-lightbox="mygallery"
-								data-title="Type F - Kitchen"><img src="media/studio-apartments/studio_f_kitchen.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-f-bathroom.jpg" data-lightbox="mygallery"
-								data-title="Type F - Bathroom"><img src="media/studio-apartments/studio_f_bathroom.jpg" alt=""></a>
+				<section id="f">
+					<div class="type">
+						<h1>Type F</h1>
+						<h2>1 BED | 1 BATH | 2-6 FLOOR | 69 UNITS AVAILABLE</h2>
+						<div class="media">
+							<div class="gallery">
+								<a href="media/studio-apartments/studio-f-room1.jpg" data-lightbox="mygallery"
+									data-title="Type F - Room 1"><img src="media/studio-apartments/studio_f_room1.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-f-room2.jpg" data-lightbox="mygallery"
+									data-title="Type F - Room 2"><img src="media/studio-apartments/studio_f_room2.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-f-kitchen.jpg" data-lightbox="mygallery"
+									data-title="Type F - Kitchen"><img src="media/studio-apartments/studio_f_kitchen.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-f-bathroom.jpg" data-lightbox="mygallery"
+									data-title="Type F - Bathroom"><img src="media/studio-apartments/studio_f_bathroom.jpg" alt=""></a>
+							</div>
+							<div class="video"></div>
 						</div>
-						<div class="video"></div>
 					</div>
-				</div>
+				</section>
 
-				<div class="type">
-					<h1>Type G</h1>
-					<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
-					<div class="media">
-						<div class="gallery">
-							<a href="media/studio-apartments/studio-g-room1.jpg" data-lightbox="mygallery"
-								data-title="Type G - Room 1"><img src="media/studio-apartments/studio_g_room1.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-g-room2.jpg" data-lightbox="mygallery"
-								data-title="Type G - Room 2"><img src="media/studio-apartments/studio_g_room2.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-g-kitchen.jpg" data-lightbox="mygallery"
-								data-title="Type G - Kitchen"><img src="media/studio-apartments/studio_g_kitchen.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-g-bathroom.jpg" data-lightbox="mygallery"
-								data-title="Type G - Bathroom"><img src="media/studio-apartments/studio_g_bathroom.jpg" alt=""></a>
+				<section id="g">
+					<div class="type">
+						<h1>Type G</h1>
+						<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
+						<div class="media">
+							<div class="gallery">
+								<a href="media/studio-apartments/studio-g-room1.jpg" data-lightbox="mygallery"
+									data-title="Type G - Room 1"><img src="media/studio-apartments/studio_g_room1.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-g-room2.jpg" data-lightbox="mygallery"
+									data-title="Type G - Room 2"><img src="media/studio-apartments/studio_g_room2.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-g-kitchen.jpg" data-lightbox="mygallery"
+									data-title="Type G - Kitchen"><img src="media/studio-apartments/studio_g_kitchen.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-g-bathroom.jpg" data-lightbox="mygallery"
+									data-title="Type G - Bathroom"><img src="media/studio-apartments/studio_g_bathroom.jpg" alt=""></a>
+							</div>
+							<div class="video"></div>
 						</div>
-						<div class="video"></div>
 					</div>
-				</div>
-
-				<div class="type">
-					<h1>Type H</h1>
-					<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
-					<div class="media">
-						<div class="gallery">
-							<a href="media/studio-apartments/studio-i-room1.jpg" data-lightbox="mygallery"
-								data-title="Type H - Room 1"><img src="media/studio-apartments/studio_h_room1.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-room2.jpg" data-lightbox="mygallery"
-								data-title="Type H - Room 2"><img src="media/studio-apartments/studio_h_room2.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-kitchen.jpg" data-lightbox="mygallery"
-								data-title="Type H - Kitchen"><img src="media/studio-apartments/studio_h_kitchen.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-bathroom.jpg" data-lightbox="mygallery"
-								data-title="Type H - Bathroom"><img src="media/studio-apartments/studio_h_bathroom.jpg" alt=""></a>
+				</section>
+				<section id="h">
+					<div class="type">
+						<h1>Type H</h1>
+						<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
+						<div class="media">
+							<div class="gallery">
+								<a href="media/studio-apartments/studio-i-room1.jpg" data-lightbox="mygallery"
+									data-title="Type H - Room 1"><img src="media/studio-apartments/studio_h_room1.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-room2.jpg" data-lightbox="mygallery"
+									data-title="Type H - Room 2"><img src="media/studio-apartments/studio_h_room2.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-kitchen.jpg" data-lightbox="mygallery"
+									data-title="Type H - Kitchen"><img src="media/studio-apartments/studio_h_kitchen.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-bathroom.jpg" data-lightbox="mygallery"
+									data-title="Type H - Bathroom"><img src="media/studio-apartments/studio_h_bathroom.jpg" alt=""></a>
+							</div>
+							<div class="video"></div>
 						</div>
-						<div class="video"></div>
 					</div>
-				</div>
+				</section>
 
-				<div class="type">
-					<h1>Type I</h1>
-					<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
-					<div class="media">
-						<div class="gallery">
-							<a href="media/studio-apartments/studio-i-room1.jpg" data-lightbox="mygallery"
-								data-title="Type I - Room 1"><img src="media/studio-apartments/studio_i_room1.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-room2.jpg" data-lightbox="mygallery"
-								data-title="Type I - Room 2"><img src="media/studio-apartments/studio_i_room2.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-kitchen.jpg" data-lightbox="mygallery"
-								data-title="Type I - Kitchen"><img src="media/studio-apartments/studio_i_kitchen.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-i-bathroom.jpg" data-lightbox="mygallery"
-								data-title="Type I - Bathroom"><img src="media/studio-apartments/studio_i_bathroom.jpg" alt=""></a>
+				<section id="i">
+					<div class="type">
+						<h1>Type I</h1>
+						<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
+						<div class="media">
+							<div class="gallery">
+								<a href="media/studio-apartments/studio-i-room1.jpg" data-lightbox="mygallery"
+									data-title="Type I - Room 1"><img src="media/studio-apartments/studio_i_room1.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-room2.jpg" data-lightbox="mygallery"
+									data-title="Type I - Room 2"><img src="media/studio-apartments/studio_i_room2.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-kitchen.jpg" data-lightbox="mygallery"
+									data-title="Type I - Kitchen"><img src="media/studio-apartments/studio_i_kitchen.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-i-bathroom.jpg" data-lightbox="mygallery"
+									data-title="Type I - Bathroom"><img src="media/studio-apartments/studio_i_bathroom.jpg" alt=""></a>
+							</div>
+							<div class="video"></div>
 						</div>
-						<div class="video"></div>
 					</div>
-				</div>
+				</section>
 
-
-				<div class="type">
-					<h1>Type J</h1>
-					<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
-					<div class="media">
-						<div class="gallery">
-							<a href="media/studio-apartments/studio-j-room1.jpg" data-lightbox="mygallery"
-								data-title="Type J - Room 1"><img src="media/studio-apartments/studio_j_room1.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-j-room2.jpg" data-lightbox="mygallery"
-								data-title="Type J - Room 2"><img src="media/studio-apartments/studio_j_room2.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-j-living.jpg" data-lightbox="mygallery"
-								data-title="Type J - Living Room"><img src="media/studio-apartments/studio_j_living.jpg" alt=""></a>
-							<a href="media/studio-apartments/studio-j-bathroom.jpg" data-lightbox="mygallery"
-								data-title="Type J - Bathroom"><img src="media/studio-apartments/studio_j_bathroom.jpg" alt=""></a>
+				<section id="j">
+					<div class="type">
+						<h1>Type J</h1>
+						<h2>1 BED | 1 BATH | 2-4 FLOOR | 69 UNITS AVAILABLE</h2>
+						<div class="media">
+							<div class="gallery">
+								<a href="media/studio-apartments/studio-j-room1.jpg" data-lightbox="mygallery"
+									data-title="Type J - Room 1"><img src="media/studio-apartments/studio_j_room1.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-j-room2.jpg" data-lightbox="mygallery"
+									data-title="Type J - Room 2"><img src="media/studio-apartments/studio_j_room2.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-j-living.jpg" data-lightbox="mygallery"
+									data-title="Type J - Living Room"><img src="media/studio-apartments/studio_j_living.jpg" alt=""></a>
+								<a href="media/studio-apartments/studio-j-bathroom.jpg" data-lightbox="mygallery"
+									data-title="Type J - Bathroom"><img src="media/studio-apartments/studio_j_bathroom.jpg" alt=""></a>
+							</div>
+							<div class="video"></div>
 						</div>
-						<div class="video"></div>
 					</div>
-				</div>
+				</section>
+
+
 			</div>
-
-			<div class="bottom-ribbon">
-				<ul class="bottom_links">
-					<li>Study. Dine. Relax. Play.</li>
-					<li>info@urbanithaca.com</li>
-					<li>(607) 330-2442</li>
-					<li>307 College Ave, Ithaca, New York, 14850</li>
-				</ul>
-			</div>
+			<script src="js/lightbox-plus-jquery.min.js"></script>
 		</div>
-		<script src="js/lightbox-plus-jquery.min.js"></script>
-
+		<div class="bottom-ribbon">
+			<ul class="bottom_links">
+				<li>Study. Dine. Relax. Play.</li>
+				<li>info@urbanithaca.com</li>
+				<li>(607) 330-2442</li>
+				<li>307 College Ave, Ithaca, New York, 14850</li>
+			</ul>
+		</div>
+	</div>
 </body>
 
 </html>
