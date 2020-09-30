@@ -61,15 +61,13 @@
 					<img src="media/studio-apartments/map.jpg" alt="">
 				</div>
 				<div class="description" data-aos="fade-up">
-					[SEAN'S BLURB] ...Located just one block away from Cornell's campus,
-					Collegetown Crossing offers studio, 2, 3, and 4 bedroom apartments
-					in the heart of Collegetown.
-					These apartments boast unparalleled luxury and comfort,
-					and provide a perfect place to study, dine, and socialize.
-					The apartment complex is located just minutes away from the
-					fantastic food and lively nightlife that Collegetown offers.
-					Collegetown Crossing is a haven of relaxtion and comfort amidst the
-					lively urban lifestyle of Cornell and Collegetown... [SEAN'S BLURB]
+					Spacious, elegantly modern, and perfectly located, Collegetown Crossing
+					exceeds expectations on all fronts. Beneath its large bedrooms and
+					beautifully furnished interiors, lies high quality masonry, steel construction,
+					and state-of-the-art soundproofing between rooms and units. Convenience
+					is also right at your door with a grocery store an elevator's ride away,
+					24-hour fitness center, and trash receptacles on every floor. Love your
+					home inside and out with Collegetown Crossing.
 				</div>
 				<div class="amenities" data-aos="fade-up">
 					<h1>Amenities</h1>
@@ -85,20 +83,25 @@
 						<li>Ample parking availability</li>
 					</ul>
 				</div>
+				<div id="app">
+					<section id="a">
+						<div v-for="item in index0" class="type" data-aos="fade-up">
+							<h1>Type A</h1>
+							<h2>4 BED | 2 BATH | 2-6 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
 
-				<section id="a">
-					<div class="type" data-aos="fade-up">
-						<h1>Type A</h1>
-						<h2>4 BED | 2 BATH | 2-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
-
-				<section id="c">
-					<div class="type" data-aos="fade-up">
-						<h1>Type C</h1>
-						<h2>4 BED | 2 BATH | 3-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
+					<section id="c">
+						<div v-for="item in index2" class="type" data-aos="fade-up">
+							<h1>Type C</h1>
+							<h2>4 BED | 2 BATH | 3-6 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
+				</div>
 
 
 				<div class="media" data-aos="fade-up">
@@ -124,6 +127,12 @@
 				</div>
 				<script src="js/lightbox-plus-jquery.min.js"></script>
 			</div>
+
+			<!-- AirTable -->
+			<script type="text/javascript" src="https://unpkg.com/vue"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+			<script type="text/javascript" src="js/vue.js"></script>
+			<!-- AirTable -->
 
 			<div class="bottom-ribbon">
 				<ul class="bottom_links">

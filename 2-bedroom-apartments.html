@@ -87,32 +87,40 @@
 						<li>Ample parking availability</li>
 					</ul>
 				</div>
-
-				<section id="b">
-					<div class="type" data-aos="fade-up">
-						<h1>Type B</h1>
-						<h2>2 BED | 1 BATH | 2 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
-				<section id="d">
-					<div class="type" data-aos="fade-up">
-						<h1>Type D</h1>
-						<h2>2 BED | 1 BATH | 2-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
-				<section id="e">
-					<div class="type" data-aos="fade-up">
-						<h1>Type E</h1>
-						<h2>2 BED | 1 BATH | 2-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
-				<section id="l">
-					<div class="type" data-aos="fade-up">
-						<h1>Type L</h1>
-						<h2>2 BED | 1 BATH | 5-6 FLOOR | 69 UNITS AVAILABLE</h2>
-					</div>
-				</section>
-
+				<div id="app">
+					<section v-for="item in index1" id="b">
+						<div class="type" data-aos="fade-up">
+							<h1>Type B</h1>
+							<h2>2 BED | 1 BATH | 2 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
+					<section id="d">
+						<div v-for="item in index3" class="type" data-aos="fade-up">
+							<h1>Type D</h1>
+							<h2>2 BED | 1 BATH | 2-6 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
+					<section id="e">
+						<div v-for="item in index4" class="type" data-aos="fade-up">
+							<h1>Type E</h1>
+							<h2>2 BED | 1 BATH | 2-6 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
+					<section id="l">
+						<div v-for="item in index11" class="type" data-aos="fade-up">
+							<h1>Type L</h1>
+							<h2>2 BED | 1 BATH | 5-6 FLOOR</h2>
+							<h2>{{ item['fields']['availability'] }} available</h2>
+							<h2>{{ item['fields']['price'] }}</h2>
+						</div>
+					</section>
+				</div>
 				<div class="media" data-aos="fade-up">
 					<h1>Media</h1>
 					<div class="gallery">
@@ -130,6 +138,12 @@
 				</div>
 				<script src="js/lightbox-plus-jquery.min.js"></script>
 			</div>
+
+			<!-- AirTable -->
+			<script type="text/javascript" src="https://unpkg.com/vue"></script>
+			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+			<script type="text/javascript" src="js/vue.js"></script>
+			<!-- AirTable -->
 
 			<div class="bottom-ribbon">
 				<ul class="bottom_links">
