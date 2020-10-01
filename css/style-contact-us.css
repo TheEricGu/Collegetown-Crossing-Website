@@ -46,7 +46,6 @@ body {
   transition: all .4s ease-in-out;
 }
 
-
 .navbar-links li a::after {
   content: '';
   display: block;
@@ -145,7 +144,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 80%;
   margin: auto;
   padding: 0;
   text-align: center;
@@ -153,8 +152,19 @@ body {
 
 .left {
   display: inline-block;
-  width: 597px;
+  width: 40%;
+  min-width: 400px;
   height: 100%;
+  padding-right: 35px;
+}
+
+.right {
+  padding-top: 45px;
+  display: inline-block;
+  width: 40%;
+  min-width: 400px;
+  vertical-align: top;
+  padding-left: 35px;
 }
 
 .left img {
@@ -179,13 +189,6 @@ body {
   font-size: 20px;
 }
 
-.right {
-  padding-top: 45px;
-  display: inline-block;
-  width: 597px;
-  padding-left: 70px;
-  vertical-align: top;
-}
 
 .form-control{
   width: 100%;
@@ -203,6 +206,10 @@ input{
   color: black;
   font-weight: 300px;
   font-size: 28px;
+}
+
+form {
+  width: 90%;
 }
 
 form .submit {
