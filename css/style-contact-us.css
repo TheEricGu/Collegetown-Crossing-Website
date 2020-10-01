@@ -108,7 +108,7 @@ body {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: .5fr .4fr;
+  grid-template-rows: .5fr .2fr;
   grid-template-areas: 
   "left right"
   "footer footer";
@@ -116,16 +116,11 @@ body {
 }
 
 #left {
-
-  display: inline-block;
   grid-area:left;
 }
  
 
 #right {
-
-  display: inline-block;
-  vertical-align: top;
   grid-area:right;
 }
 
@@ -198,7 +193,6 @@ form .submit:hover {
  }
 
 footer {
-
   position: relative;	
   margin-bottom: 20px;
   text-align: center;
@@ -288,7 +282,7 @@ footer ul li {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr .1fr;
+    grid-template-rows: 1fr .5fr .2fr;
     grid-template-areas: 
     "left"
     "right"
@@ -296,12 +290,12 @@ footer ul li {
     grid-gap: 4rem;
   }
 }
+
 @media (max-width: 1102px){
   footer ul li {
     display: block;
     margin: 15px 0;
     font-size: 12px;
   }
-  
 }
   

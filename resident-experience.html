@@ -47,7 +47,7 @@
 				});
 			</script>
 
-			<div class="left-column">
+			<div id="left">
 				<div class="header" data-aos="fade-right">Features</div>
 				<div data-aos="fade-right">
 					<ul class="list">
@@ -64,9 +64,8 @@
 				</div>
 			</div>
 
-			<div class="right-column">
+			<div id="right">
 				<div class="header" data-aos="fade-left">Amenities</div>
-
 				<div data-aos="fade-left">
 					<ul class="list">
 						<li>Fully furnished rooms</li>
@@ -82,41 +81,48 @@
 				</div>
 			</div>
 
-			<div class="slidershow middle">
+			<div id="media">
+				<div class="slideshow-container">
 
-				<div class="slides" data-aos="fade-up">
-					<input type="radio" name="r" id="r1" checked>
-					<input type="radio" name="r" id="r2">
-					<input type="radio" name="r" id="r3">
-					<input type="radio" name="r" id="r4">
-					<input type="radio" name="r" id="r5">
-					<div class="slide s1">
-						<img src="media/resident-experience/lobby.jpg" alt="">
+					<div class="mySlides fade">
+						<img src="media/resident-experience/lobby.jpg" style="width:100%">
 					</div>
-					<div class="slide">
-						<img src="media/resident-experience/gym.jpg" alt="">
-					</div>
-					<div class="slide">
-						<img src="media/resident-experience/map.jpg" alt="">
-					</div>
-				</div>
 
-				<div class="navigation">
-					<label for="r1" class="bar"></label>
-					<label for="r2" class="bar"></label>
-					<label for="r3" class="bar"></label>
+					<div class="mySlides fade">
+						<img src="media/resident-experience/gym.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="media/resident-experience/map.jpg" style="width:100%">
+					</div>
+
+					<!-- Next and previous buttons -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				</div>
+				<br>
+
+				<!-- The dots/circles -->
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
+				<script src="js/slideshow.js"></script>
+
 			</div>
 
-			<div class="bottom-ribbon">
-				<ul class="bottom_links">
-					<li>Study. Dine. Relax. Play.</li>
-					<li>info@urbanithaca.com</li>
-					<li>(607) 330-2442</li>
-					<li>307 College Ave, Ithaca, New York, 14850</li>
-				</ul>
-			</div>
 		</div>
+		<footer>
+			<ul>
+				<li>Study. Dine. Relax. Play.</li>
+				<li>info@urbanithaca.com</li>
+				<li>(607) 330-2442</li>
+				<li>307 College Ave, Ithaca, New York, 14850</li>
+			</ul>
+		</footer>
+	</div>
+
 </body>
 
 </html>
