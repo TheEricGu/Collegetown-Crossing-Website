@@ -11,7 +11,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
 background-attachment: fixed;
-animation: fade 30s linear infinite 0s;
+animation: fade 20s linear infinite 0s;
 animation-timing-function: ease-in-out;
 }
   
