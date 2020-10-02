@@ -1,16 +1,1 @@
-$('a[href*="#"]')
-  .on('click', function (event) {
-    if (this.hash !== "") {
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top - 100
-      }, 800, function () {
-        if (history.pushState) {
-          history.pushState(null, null, hash);
-        } else {
-          window.location.hash = hash;
-        }
-      });
-      return false;
-    }
-  });
+$('a[href*="#"]').on("click", function (t) { if ("" !== this.hash) { var h = this.hash; return $("html, body").animate({ scrollTop: $(h).offset().top - 100 }, 800, function () { history.pushState ? history.pushState(null, null, h) : window.location.hash = h }), !1 } });

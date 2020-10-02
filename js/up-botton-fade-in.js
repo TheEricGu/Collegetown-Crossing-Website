@@ -1,10 +1,1 @@
-$(document).ready(function () {
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 40) {
-      $('#topBtn').fadeIn();
-    } else {
-      $('#topBtn').fadeOut();
-    }
-  });
-});
+$(document).ready(function () { $(window).scroll(function () { $(this).scrollTop() > 40 ? $("#topBtn").fadeIn() : $("#topBtn").fadeOut() }) });

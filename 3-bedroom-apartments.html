@@ -11,22 +11,13 @@
 		rel="stylesheet">
 	<link rel="icon" href="media/tab-logo.png">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/smooth-scroll.js"></script>
-	<script type="text/javascript" src="js/up-botton-fade-in.js"></script>
 	<link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 	<nav class="navbar">
-		<div class="logo"><a href="index.html">
-				<img src="media/nav-logo.png">
-			</a></div>
-		<a href="#" class="toggle-button">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</a>
+		<div class="logo"><a href="index.html"><img src="media/nav-logo.png"></a></div><a href="#"
+			class="toggle-button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></a>
 		<div class="navbar-links">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -36,35 +27,17 @@
 			</ul>
 		</div>
 	</nav>
-	<script src="js/nav.js"></script>
-
 	<div class="page-title" data-aos="fade-up">
 		<h1>3 Bedroom Apartments</h1>
 	</div>
-
 	<div class="content-area">
 		<div class="container">
-			<script src="js/aos.js"></script>
-			<script type="text/javascript">
-				AOS.init({
-					duration: 1200,
-				});
-			</script>
 			<div class="nav-column">
-				<h1>3 Bedroom Apartments</h1>
-				<a href="#k">Type K</a>
-				<a href="#m">Type M</a>
+				<h1>3 Bedroom Apartments</h1><a href="#k">Type K</a><a href="#m">Type M</a>
 			</div>
-
 			<div class="content-column">
 				<div class="map">
 					<html>
-
-					<head>
-						<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
-						<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
-						<script src="js/map.js"></script>
-					</head>
 
 					<body style="border: 0; margin: 0;">
 						<div id="map" style="width: 100%; padding-top: 56.25%;"></div>
@@ -72,13 +45,12 @@
 
 					</html>
 				</div>
-				<div class="description" data-aos="fade-up">
-					Spacious, elegantly modern, and perfectly located, Collegetown Crossing exceeds expectations on all fronts.
-					Beneath its large bedrooms, high ceilings, and beautifully furnished interiors, lies high quality masonry,
-					concrete, steel construction, and state of the art soundproofing to ensure a good night's sleep. Convenience
-					is right at your door with a 24-hour fitness center, trash and recycling on every floor, and a grocery store
-					an elevator’s ride away. Love your home inside and out at Collegetown Crossing.
-				</div>
+				<div class="description" data-aos="fade-up">Spacious, elegantly modern, and perfectly located, Collegetown
+					Crossing exceeds expectations on all fronts.Beneath its large bedrooms, high ceilings, and beautifully
+					furnished interiors, lies high quality masonry,concrete, steel construction, and state of the art
+					soundproofing to ensure a good night's sleep. Convenienceis right at your door with a 24-hour fitness center,
+					trash and recycling on every floor, and a grocery storean elevator’s ride away. Love your home inside and out
+					at Collegetown Crossing.</div>
 				<div class="amenities" data-aos="fade-up">
 					<h1>Amenities</h1>
 					<ul>
@@ -98,55 +70,44 @@
 						<div v-for="item in index10" class="type" data-aos="fade-up">
 							<h1>Type K</h1>
 							<h2>3 BED | 1 BATH | 2 FLOOR</h2>
-							<h2>{{ item['fields']['availability'] }} available</h2>
-							<h2>{{ item['fields']['price'] }}</h2>
+							<h2>{{item['fields']['availability']}}available</h2>
+							<h2>{{item['fields']['price']}}</h2>
 						</div>
 					</section>
-
 					<section id="m">
 						<div v-for="item in index12" class="type" data-aos="fade-up">
 							<h1>Type M</h1>
 							<h2>3 BED | 2 BATH | 5-6 FLOOR</h2>
-							<h2>{{ item['fields']['availability'] }} available</h2>
-							<h2>{{ item['fields']['price'] }}</h2>
+							<h2>{{item['fields']['availability']}}available</h2>
+							<h2>{{item['fields']['price']}}</h2>
 						</div>
 					</section>
 				</div>
-
-
 				<div class="media" data-aos="fade-up">
 					<h1>Media</h1>
-					<div class="gallery">
-						<a href="media/3-bedroom-apartments/threebr-room1.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Room 1"><img src="media/3-bedroom-apartments/threebr_room1.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-room2.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Room 2"><img src="media/3-bedroom-apartments/threebr_room2.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-room3.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Room 3"><img src="media/3-bedroom-apartments/threebr_room3.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-kitchen1.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Kitchen 1"><img src="media/3-bedroom-apartments/threebr_kitchen1.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-kitchen2.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Kitchen 2"><img src="media/3-bedroom-apartments/threebr_kitchen2.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-living.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Living Room"><img src="media/3-bedroom-apartments/threebr_living.jpg" alt=""></a>
-						<a href="media/3-bedroom-apartments/threebr-bathroom.jpg" data-lightbox="mygallery"
-							data-title="3 Bedroom - Bathroom"><img src="media/3-bedroom-apartments/threebr_bathroom.jpg" alt=""></a>
-						<a href="media/apartments/TYPE K.jpg" data-lightbox="mygallery" data-title="Type K Floor Plan"><img
-								src="media/apartments/TYPE K - Copy-min.jpg" alt=""></a>
-						<a href="media/apartments/TYPE M.jpg" data-lightbox="mygallery" data-title="Type M Floor Plan"><img
-								src="media/apartments/TYPE M - Copy-min.jpg" alt=""></a>
-					</div>
-					<iframe width="100%" height="400" src="https://www.youtube.com/embed/cO0otQGQ-s4" frameborder="0"
+					<div class="gallery"><a href="media/3-bedroom-apartments/threebr-room1.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Room 1"><img src="media/3-bedroom-apartments/threebr_room1.jpg" alt=""></a><a
+							href="media/3-bedroom-apartments/threebr-room2.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Room 2"><img src="media/3-bedroom-apartments/threebr_room2.jpg" alt=""></a><a
+							href="media/3-bedroom-apartments/threebr-room3.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Room 3"><img src="media/3-bedroom-apartments/threebr_room3.jpg" alt=""></a><a
+							href="media/3-bedroom-apartments/threebr-kitchen1.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Kitchen 1"><img src="media/3-bedroom-apartments/threebr_kitchen1.jpg"
+								alt=""></a><a href="media/3-bedroom-apartments/threebr-kitchen2.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Kitchen 2"><img src="media/3-bedroom-apartments/threebr_kitchen2.jpg"
+								alt=""></a><a href="media/3-bedroom-apartments/threebr-living.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Living Room"><img src="media/3-bedroom-apartments/threebr_living.jpg"
+								alt=""></a><a href="media/3-bedroom-apartments/threebr-bathroom.jpg" data-lightbox="mygallery"
+							data-title="3 Bedroom - Bathroom"><img src="media/3-bedroom-apartments/threebr_bathroom.jpg" alt=""></a><a
+							href="media/apartments/TYPE K.jpg" data-lightbox="mygallery" data-title="Type K Floor Plan">
+							<img src="media/apartments/TYPE K - Copy-min.jpg" alt="">
+						</a><a href="media/apartments/TYPE M.jpg" data-lightbox="mygallery" data-title="Type M Floor Plan">
+							<img src="media/apartments/TYPE M - Copy-min.jpg" alt="">
+						</a></div><iframe width="100%" height="400" src="https://www.youtube.com/embed/cO0otQGQ-s4" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowfullscreen></iframe>
 				</div>
-				<script src="js/lightbox-plus-jquery.min.js"></script>
 			</div>
-
-			<script type="text/javascript" src="https://unpkg.com/vue"></script>
-			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
-			<script type="text/javascript" src="js/vue.js"></script>
-
 		</div>
 		<footer>
 			<ul>
@@ -155,10 +116,20 @@
 				<li>(607) 330-2442</li>
 				<li>307 College Ave, Ithaca, New York, 14850</li>
 			</ul>
-		</footer>
-		<a href="#">
-			<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
-		</a>
+		</footer><a href="#"><button id="topBtn"><i class="fas fa-arrow-up"></i></button></a>
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
+		<script src="js/aos.js"></script>
+		<script type="text/javascript">AOS.init({ duration: 1200, });</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/up-botton-fade-in.js"></script>
+		<script src="js/nav.js"></script>
+		<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+		<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+		<script src="js/map.js"></script>
+		<script src="js/lightbox-plus-jquery.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/vue"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
 </body>
 
 </html>

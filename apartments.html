@@ -14,14 +14,8 @@
 
 <body>
 	<nav class="navbar">
-		<div class="logo"><a href="index.html">
-				<img src="media/nav-logo.png">
-			</a></div>
-		<a href="#" class="toggle-button">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</a>
+		<div class="logo"><a href="index.html"><img src="media/nav-logo.png"></a></div><a href="#"
+			class="toggle-button"><span class="bar"></span><span class="bar"></span><span class="bar"></span></a>
 		<div class="navbar-links">
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -31,20 +25,11 @@
 			</ul>
 		</div>
 	</nav>
-	<script src="js/nav.js"></script>
-	<script src="js/aos.js"></script>
-	<script type="text/javascript">
-		AOS.init({
-			duration: 1200,
-		});
-	</script>
 	<div class="page-title" data-aos="fade-up">
 		<h1>Apartments</h1>
 	</div>
-
 	<div class="content-area">
 		<div class="container">
-
 			<div class="filter-button">
 				<ul>
 					<li class="active" data-filter="*">View All</li>
@@ -59,205 +44,163 @@
 					<li data-filter=".6f">6th Floor</li>
 				</ul>
 			</div>
-
 			<div id="app" class="filter-item img-area">
 				<div class="item single-img 4 2f 3f 4f 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="4-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="4-bedroom-apartments.html">
 							<div class="title">Type A</div>
 						</a>
 						<div v-for="item in index0" class="description">
 							<p>4 Bed | 2 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE a.jpg" alt="">
+					</div><img src="media/apartments/TYPE a.jpg" alt="">
 				</div>
-
 				<div class="item single-img 2 2f">
-					<div class="overlay overlay--blur">
-						<a href="2-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="2-bedroom-apartments.html">
 							<div class="title">Type B</div>
 						</a>
 						<div v-for="item in index1" class="description">
 							<p>2 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/type-b.jpg" alt="">
+					</div><img src="media/apartments/type-b.jpg" alt="">
 				</div>
-
 				<div class="item single-img 4 3f 4f 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="4-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="4-bedroom-apartments.html">
 							<div class="title">Type C</div>
 						</a>
 						<div v-for="item in index2" class="description">
 							<p>4 Bed | 2 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE c.jpg" alt="">
+					</div><img src="media/apartments/TYPE c.jpg" alt="">
 				</div>
-
 				<div class="item single-img 2 2f 3f 4f 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="2-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="2-bedroom-apartments.html">
 							<div class="title">Type D</div>
 						</a>
 						<div v-for="item in index3" class="description">
 							<p>2 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE d.jpg" alt="">
+					</div><img src="media/apartments/TYPE d.jpg" alt="">
 				</div>
-
 				<div class="item single-img 2 2f 3f 4f 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="2-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="2-bedroom-apartments.html">
 							<div class="title">Type E</div>
 						</a>
 						<div v-for="item in index4" class="description">
 							<p>2 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE e.jpg" alt="">
+					</div><img src="media/apartments/TYPE e.jpg" alt="">
 				</div>
-
 				<div class="item single-img s 2f 3f 4f">
-					<div class="overlay overlay--blur">
-						<a href="studio-apartments.html">
+					<div class="overlay overlay--blur"><a href="studio-apartments.html">
 							<div class="title">Type F</div>
 						</a>
 						<div v-for="item in index5" class="description">
 							<p>1 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE f.jpg" alt="">
+					</div><img src="media/apartments/TYPE f.jpg" alt="">
 				</div>
-
 				<div class="item single-img s 2f 3f 4f">
-					<div class="overlay overlay--blur">
-						<a href="studio-apartments.html">
+					<div class="overlay overlay--blur"><a href="studio-apartments.html">
 							<div class="title">Type G</div>
 						</a>
 						<div v-for="item in index6" class="description">
 							<p>1 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE g.jpg" alt="">
+					</div><img src="media/apartments/TYPE g.jpg" alt="">
 				</div>
-
 				<div class="item single-img s 2f 3f 4f">
-					<div class="overlay overlay--blur">
-						<a href="studio-apartments.html">
+					<div class="overlay overlay--blur"><a href="studio-apartments.html">
 							<div class="title">Type H</div>
 						</a>
 						<div v-for="item in index7" class="description">
 							<p>1 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE h.jpg" alt="">
+					</div><img src="media/apartments/TYPE h.jpg" alt="">
 				</div>
-
 				<div class="item single-img s 2f 3f 4f">
-					<div class="overlay overlay--blur">
-						<a href="studio-apartments.html">
+					<div class="overlay overlay--blur"><a href="studio-apartments.html">
 							<div class="title">Type I</div>
 						</a>
 						<div v-for="item in index8" class="description">
 							<p>1 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE i.jpg" alt="">
+					</div><img src="media/apartments/TYPE i.jpg" alt="">
 				</div>
-
 				<div class="item single-img s 2f 3f 4f">
-					<div class="overlay overlay--blur">
-						<a href="studio-apartments.html">
+					<div class="overlay overlay--blur"><a href="studio-apartments.html">
 							<div class="title">Type J</div>
 						</a>
 						<div v-for="item in index9" class="description">
 							<p>1 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE j.jpg" alt="">
+					</div><img src="media/apartments/TYPE j.jpg" alt="">
 				</div>
-
 				<div class="item single-img 3 2f 3f 4f 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="3-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="3-bedroom-apartments.html">
 							<div class="title">Type K</div>
 						</a>
 						<div v-for="item in index10" class="description">
 							<p>3 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE k.jpg" alt="">
+					</div><img src="media/apartments/TYPE k.jpg" alt="">
 				</div>
-
 				<div class="item single-img 2 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="2-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="2-bedroom-apartments.html">
 							<div class="title">Type L</div>
 						</a>
 						<div v-for="item in index11" class="description">
 							<p>2 Bed | 1 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE l.jpg" alt="">
+					</div><img src="media/apartments/TYPE l.jpg" alt="">
 				</div>
-
 				<div class="item single-img 3 5f 6f">
-					<div class="overlay overlay--blur">
-						<a href="3-bedroom-apartments.html">
+					<div class="overlay overlay--blur"><a href="3-bedroom-apartments.html">
 							<div class="title">Type M</div>
 						</a>
 						<div v-for="item in index12" class="description">
 							<p>3 Bed | 2 Bath</p>
-							<p>{{ item['fields']['availability'] }} available</p>
-							<p>{{ item['fields']['price'] }}
+							<p>{{item['fields']['availability']}}available</p>
+							<p>{{item['fields']['price']}}
 							<p>
 						</div>
-					</div>
-					<img src="media/apartments/TYPE m.jpg" alt="">
+					</div><img src="media/apartments/TYPE m.jpg" alt="">
 				</div>
-				<script type="text/javascript" src="https://unpkg.com/vue"></script>
-				<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
-				<script type="text/javascript" src="js/vue.js"></script>
 			</div>
 		</div>
 		<footer>
@@ -269,6 +212,12 @@
 			</ul>
 		</footer>
 	</div>
+	<script type="text/javascript">AOS.init({ duration: 1200, });</script>
+	<script src="js/nav.js"></script>
+	<script src="js/aos.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/vue"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/isotope.pkgd.min.js"></script>
 	<script src="js/filter.js"></script>
