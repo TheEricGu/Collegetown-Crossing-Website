@@ -257,7 +257,8 @@ margin-bottom: 30px;
 }
 
 .media .gallery img {
-  width: 24%;
+  width: 23%;
+  margin: 1%;
 }
 
 footer {

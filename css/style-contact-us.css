@@ -78,8 +78,6 @@ body {
   border-radius: 10px;
 }
 
-
-
 .page-title {
   position: absolute;
   top: 250px;
@@ -151,7 +149,7 @@ body {
   margin: auto;
 }
 
-.form-control{
+/* .form-control{
   width: 100%;
   background: transparent;
   border: none;
@@ -190,7 +188,7 @@ form .submit:hover {
   transition: .3s ease-in-out;
   background: white;
   color: black;
- }
+ } */
 
 footer {
   position: relative;	
@@ -236,7 +234,7 @@ footer ul li {
   }
 
   .logo img{
-    height: 30px;
+  height: 30px;
    margin: 25px;
   }
 

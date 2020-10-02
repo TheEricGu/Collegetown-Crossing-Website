@@ -261,7 +261,8 @@ body {
 }
 
 .media .gallery img {
-  width: 24%;
+  width: 23%;
+  margin: 1%;
 }
 
 .media h1 {
