@@ -58,7 +58,19 @@
 
 			<div class="content-column">
 				<div class="map">
-					<img src="media/studio-apartments/map.jpg" alt="">
+					<html>
+
+					<head>
+						<script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+						<link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+						<script src="js/map.js"></script>
+					</head>
+
+					<body style="border: 0; margin: 0;">
+						<div id="map" style="width: 100%; padding-top: 56.25%;"></div>
+					</body>
+
+					</html>
 				</div>
 				<div class="description" data-aos="fade-up">
 					Spacious, elegantly modern, and perfectly located, Collegetown Crossing exceeds expectations on all fronts.
@@ -101,7 +113,6 @@
 					</section>
 				</div>
 
-
 				<div class="media" data-aos="fade-up">
 					<h1>Media</h1>
 					<div class="gallery">
@@ -121,26 +132,31 @@
 							data-title="4 Bedroom - Bathroom 1"><img src="media/4-bedroom-apartments/fourbr_bathroom1.jpg" alt=""></a>
 						<a href="media/4-bedroom-apartments/fourbr-bathroom2.jpg" data-lightbox="mygallery"
 							data-title="4 Bedroom - Bathroom 2"><img src="media/4-bedroom-apartments/fourbr_bathroom2.jpg" alt=""></a>
+						<a href="media/apartments/TYPE A.jpg" data-lightbox="mygallery" data-title="Type A Floor Plan"><img
+								src="media/apartments/TYPE A - Copy-min.jpg" alt=""></a>
+						<a href="media/apartments/TYPE C.jpg" data-lightbox="mygallery" data-title="Type C Floor Plan"><img
+								src="media/apartments/TYPE C - Copy-min.jpg" alt=""></a>
 					</div>
+					<iframe width="100%" height="400" src="https://www.youtube.com/embed/gxle86F39o4" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
 				</div>
 				<script src="js/lightbox-plus-jquery.min.js"></script>
 			</div>
 
-			<!-- AirTable -->
 			<script type="text/javascript" src="https://unpkg.com/vue"></script>
 			<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.16.2/axios.min.js"></script>
 			<script type="text/javascript" src="js/vue.js"></script>
-			<!-- AirTable -->
 
-			<div class="bottom-ribbon">
-				<ul class="bottom_links">
-					<li>Study. Dine. Relax. Play.</li>
-					<li>info@urbanithaca.com</li>
-					<li>(607) 330-2442</li>
-					<li>307 College Ave, Ithaca, New York, 14850</li>
-				</ul>
-			</div>
 		</div>
+		<footer>
+			<ul>
+				<li>Study. Dine. Relax. Play.</li>
+				<li>info@urbanithaca.com</li>
+				<li>(607) 330-2442</li>
+				<li>307 College Ave, Ithaca, New York, 14850</li>
+			</ul>
+		</footer>
 		<a href="#">
 			<button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 		</a>

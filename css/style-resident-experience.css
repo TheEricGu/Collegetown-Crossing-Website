@@ -26,6 +26,7 @@ body {
 
 .navbar-links {
   height: 100%;
+  
 }
 
 .navbar-links ul {
@@ -44,6 +45,7 @@ body {
   font-size: 14px;
   color: black;
   transition: all .4s ease-in-out;
+ 
 }
 
 
@@ -251,6 +253,7 @@ footer ul li {
   .navbar-links {
       display: none;
       width: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
   }
 
   .navbar-links ul {
@@ -264,6 +267,7 @@ footer ul li {
 
   .navbar-links ul li a {
       padding: .5rem 1rem;
+      
   }
 
   .navbar-links li a::after {
@@ -273,7 +277,7 @@ footer ul li {
   .navbar-links.active {
       display: flex;
       transition: all 0.5s;
-      background-color: rgba(255, 255, 255, 0.8);
+     
   }
 
   .container{
@@ -286,8 +290,7 @@ footer ul li {
     grid-template-areas: 
     "left"
     "right"
-    "media"
-    "footer";
+    "media";
   }
 
   .page-title h1 {

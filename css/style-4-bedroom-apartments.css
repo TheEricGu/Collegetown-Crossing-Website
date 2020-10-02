@@ -68,7 +68,6 @@ body {
   transition: all .4s ease-in-out;
 }
 
-
 .navbar-links li a::after {
   content: '';
   display: block;
@@ -101,49 +100,6 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 930px) {
-  .logo img{
-    height: 30px;
-   margin: 25px;
-  }
-
-  .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .toggle-button {
-      display: flex;
-  }
-
-  .navbar-links {
-      display: none;
-      width: 100%;
-  }
-
-  .navbar-links ul {
-      width: 100%;
-      flex-direction: column;
-  }
-
-  .navbar-links ul li {
-      text-align: center;
-  }
-
-  .navbar-links ul li a {
-      padding: .5rem 1rem;
-  }
-
-  .navbar-links li a::after {
-    display: none;
-  }
-
-  .navbar-links.active {
-      display: flex;
-      transition: all 0.5s;
-  }
-}
-
 .page-title {
   position: absolute;
   top: 250px;
@@ -166,17 +122,21 @@ body {
   padding-top: 60px;
 }
 .container {
-  width: 1200px;
+  width: 80%;
   margin: auto;
   text-align: center;
-  background-color: white;
+  display: grid;
+  grid-template-columns: .3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "left right";
+  grid-gap: 5rem;
 }
 
 .nav-column {
-  width: 300px;
+  grid-area: left;
   display: inline-block;
   vertical-align: top;
-  padding-right: 34px;
 }
 
 .nav-column h1 {
@@ -220,9 +180,8 @@ body {
 }
 
 .content-column {
-  width: 894px;
+  grid-area: right;
   display: inline-block;
-  padding-left: 20px;
 }
 
 .content-column .map img {
@@ -235,7 +194,7 @@ body {
 }
 
 .map {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .map img {
@@ -289,7 +248,7 @@ margin-bottom: 30px;
   text-align: left;
   font-weight: 300;
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .media {
@@ -297,9 +256,12 @@ margin-bottom: 30px;
   padding-top: 30px;
 }
 
+.media .gallery {
+  margin-bottom: 30px;
+}
+
 .media .gallery img {
-  height: 214px;
-  width: 214px;
+  width: 24%;
 }
 
 .media h1 {
@@ -309,7 +271,7 @@ margin-bottom: 30px;
   margin-bottom: 15px;
 }
 
-.bottom-ribbon {
+footer {
   position: relative;
   margin-top: 180px;	
   margin-bottom: 20px;
@@ -317,11 +279,139 @@ margin-bottom: 30px;
   width: 100%;
 }
 
-.bottom-ribbon ul li {
+footer ul li {
   display: inline-block;
   margin: 0 30px;
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 16px;
   color: black;
+}
+
+/* Hamburger */
+@media (max-width: 936px) {
+  .logo img{
+    height: 30px;
+    margin: 25px;
+  }
+
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .toggle-button {
+      display: flex;
+  }
+
+  .navbar-links {
+      display: none;
+      width: 100%;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+  }
+
+  .navbar-links li a::after {
+    display: none;
+  }
+
+  .navbar-links.active {
+      display: flex;
+      transition: all 0.5s;   
+  }
+
+  .container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .1fr 1fr;
+    grid-template-areas: 
+    "left"
+    "right";
+    grid-gap: 0rem;
+  }
+
+  .page-title h1 {
+    font-size: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 667px){
+  .nav-column a {
+    font-size: 18px;
+  }
+
+  .map {
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .amenities h1 {
+    font-size: 26px;
+    padding-top: 20px;
+  }
+
+  .amenities ul{
+    margin-bottom: 20px;
+  }
+
+  .amenities ul li {
+    font-size: 16px;
+  }
+
+  .type {
+    padding-top: 20px;
+  }
+
+  .type h1 {
+    font-size: 26px;
+  }
+  
+  .type h2 {
+    font-size: 16px;
+  }
+
+  .media h1 {
+    font-size: 26px;
+  }
+
+  .media .gallery img {
+    width: 48%;
+  }
+
+  #topBtn{
+    bottom: 20px;
+    right: 20px;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Footer */
+@media (max-width: 1113px){
+  footer ul li {
+    display: block;
+    margin: 15px 0;
+    font-size: 12px;
+  }
 }
