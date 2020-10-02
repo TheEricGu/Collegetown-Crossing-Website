@@ -120,7 +120,7 @@ animation-timing-function: ease-in-out;
   border-radius: 10px;
 }
 
-@media (max-width: 930px) {
+@media (max-width: 936px) {
   .logo img{
     height: 30px;
    margin: 25px;

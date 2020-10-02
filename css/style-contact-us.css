@@ -211,7 +211,7 @@ footer ul li {
 }
 
 
-@media (max-width: 956px) {
+@media (max-width: 936px) {
   .page-title h1 {
     font-size: 40px;
   }
@@ -291,7 +291,7 @@ footer ul li {
   }
 }
 
-@media (max-width: 1102px){
+@media (max-width: 1113px){
   footer ul li {
     display: block;
     margin: 15px 0;
