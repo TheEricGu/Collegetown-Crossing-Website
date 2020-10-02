@@ -144,60 +144,77 @@ body {
   font-size: 20px;
 }
 
-#contact-form{
-  width: 80%;
-  margin: auto;
-}
-
-/* .form-control{
-  width: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid gray;
-  margin-bottom: 40px;
-  font-weight: 300px;
-  height: 30px;
-  font-size: 16px;
-}
-
-input{
-  color: black;
-  font-weight: 300px;
-  font-size: 28px;
-}
-
-form {
+form{
   width: 90%;
+  text-align: left;
 }
 
-form .submit {
-  border-color: transparent;
-  background: black;
-  border: 1px solid black;
-  color: white;
+label {
+  font-size: 18px;
+  font-weight: 400;
+}
+input {
   font-size: 18px;
   font-weight: 300;
-  letter-spacing: 3px;
-  height: 50px;
-  margin-top: 40px;
+  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px;
+}
+select {
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px;
+}
+option {
+  font-weight: 300;
 }
 
-form .submit:hover {
+textarea {
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+  margin-top: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 6px;
+}
+
+button {
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  margin-top: 5px;
+  background: #404040;
+  padding: 15px;
+  color: white;
+  border: 1px solid #404040;
+}
+
+button:hover {
   cursor: pointer;
   transition: .3s ease-in-out;
   background: white;
   color: black;
- } */
+  border: 1px solid #404040;
+ } 
 
-footer {
+ footer {
   position: relative;	
   margin-bottom: 20px;
   text-align: center;
   width: 100%;
   grid-area:bottom;
 }
-
 
 footer ul li {
   display: inline-block;
@@ -207,7 +224,6 @@ footer ul li {
   font-size: 16px;
   color: black;
 }
-
 
 @media (max-width: 936px) {
   .page-title h1 {

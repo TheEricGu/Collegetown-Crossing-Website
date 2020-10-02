@@ -39,7 +39,39 @@
 				</div>
 			</div>
 			<div id="right">
+				<form action="php/contact.php" method="post">
+					<div class="elem-group">
+						<label for="name">FULL NAME</label>
+						<input type="text" id="name" name="visitor_name" placeholder="John Doe" required>
+					</div>
 
+					<div class="elem-group">
+						<label for="email">EMAIL ADDRESS</label>
+						<input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+					</div>
+
+					<div class="elem-group">
+						<label for="department-selection">SUBJECT</label>
+						<select id="department-selection" name="subject" required>
+							<option value="">--</option>
+							<option value="inquiry">Inquiry</option>
+							<option value="maintenance">Maintenance</option>
+							<option value="other">Other</option>
+						</select>
+					</div>
+
+					<div class="elem-group">
+						<label for="title">PHONE NUMBER</label>
+						<input type="text" id="title" name="email_title" required placeholder="123-456-7890">
+					</div>
+
+					<div class="elem-group">
+						<label for="message">MESSAGE</label>
+						<textarea id="message" name="visitor_message" placeholder="Type your message here" required></textarea>
+					</div>
+
+					<button type="submit">SEND MESSAGE</button>
+				</form>
 			</div>
 		</div>
 		<footer>
