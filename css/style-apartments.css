@@ -186,7 +186,7 @@ body {
   transform:translateY(0)
 }
 
-.overlay a{
+.overlay .title{
   text-decoration: none;
   color: white;
 }
@@ -200,7 +200,9 @@ body {
   margin-bottom: 15px;
 }
 
-.description {
+.overlay .description p{
+  text-decoration: none;
+  color: white;
   font-size: 25px;
   text-align: center;
   line-height: 40px;
