@@ -5,16 +5,6 @@
   font-family: Josefin Sans;
 }
 
-body {
-  background: url(../media/apartments/background.jpg) no-repeat center center fixed;
-  background-size: cover;
-}
-@media (max-width: 767px) {
-  body {
-    background: url(../media/apartments/background-mobile.jpg);
-  }
-}
-
 .navbar {
   display: flex;
   position: relative;
@@ -89,6 +79,12 @@ body {
   width: 100%;  
   text-align: center;
   letter-spacing: 8px;
+}
+
+.background{
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
 }
 
 .page-title h1 {
